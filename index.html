@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artefak Skripsi</title>
+    <link rel="stylesheet" href="./styles/indexstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./styles/footerstyle.css">
+    <link rel="icon" type="image/png" href="logo stis.png">
+</head>
+
+
+<body>
+    <!-- Modal -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>
+
+<!-- Scripts di akhir body -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".box-img img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  });
+</script>
+
+    <header>
+        <a href="index.html" class="logo">Dashboard Skripsi</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="metadata.html">Metadata</a></li>
+            <li><a href="GA.html">Graphical Abstract</a></li>
+            <link rel="icon" type="image/png" href="badung.png">
+        </ul>
+    </header>
+    <main>
+        <section class="home" id="home">
+        <div class="text">
+            <h1>Dampak Perubahan Lahan Akibat Pariwisata Terhadap Layanan Ekosistem Lingkungan Menggunakan InVEST</h1>
+            <p>Berdasarkan penelitian oleh Atanasius Alfandi bersama Yuliagnis Transfer Wijaya</p>
+        </div>
+    </section>
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>Badung, Bali</span>
+            <h1>Perubahan Lahan Akibat Pariwisata</h1>
+            <p>Perubahan lahan yang terjadi di Kabupaten Badung, Bali, Indonesia, akibat pariwisata telah mengakibatkan dampak signifikan terhadap layanan ekosistem lingkungan. Penelitian ini bertujuan untuk menganalisis dampak tersebut dengan menggunakan InVEST (Integrated Valuation of Ecosystem Services and Tradeoffs), sebuah alat yang memungkinkan penilaian layanan ekosistem secara kuantitatif.</p>
+            <p>Hasil penelitian menunjukkan bahwa perubahan lahan yang terjadi di Kabupaten Badung telah mengurangi kualitas layanan ekosistem, seperti penyediaan air bersih, penyerapan karbon, dan keanekaragaman hayati. Selain itu, perubahan lahan juga telah meningkatkan risiko bencana alam, seperti banjir dan tanah longsor.</p>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class="bx bxs-map"></i>
+                <h2>Lokasi</h2>
+                <p>Kabupaten Badung, Provinsi Bali</p>
+            </div>
+
+            <div class="box">
+                <i class="bx bxs-calendar-check"></i>
+                <h2>Tahun Penelitian</h2>
+                <p>2014, 2019, 2024</p>
+            </div>
+
+            <div class="box">
+                <i class="bx bxs-calendar-star"></i>
+                <h2>Metode</h2>
+                <p>Remote Sensing, Machine Learning, InVEST</p>
+            </div>
+        </div>
+    </section>
+    <div class="services" id="services">
+        <div class="heading">
+            <h1>Perubahan Lahan<br>Kabupaten Badung</h1>
+        </div>
+        <div class="services-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="styles/2014.png" alt="">
+                </div>
+                <p>2014</p>
+                <h3>Land Use Land Cover</h3>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="styles/2019.png" alt="">
+                </div>
+                <p>2019</p>
+                <h3>Land Use Land Cover</h3>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="styles/2024.png" alt="">
+                </div>
+                <p>2024</p>
+                <h3>Land Use Land Cover</h3>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="styles/grafik.png" alt="">
+                </div>
+                <h3>Grafik Perubahan Luas Tutupan Lahan</h3>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section>
+    <div class="services" id="services">
+        <div class="heading">
+            <h1>Perubahan Layanan Ekosistem<br>Kabupaten Badung</h1>
+        </div>
+        <div class="services-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="styles/WY.png" alt="">
+                </div>
+                <h3>Water Yield</h3>
+                <h2><span></span></h2>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="styles/CSS.png" alt="">
+                </div>
+                <h3>Carbon Storage</h3>
+                <h2><span></span></h2>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="styles/NDR.png" alt="">
+                </div>
+                <h3>Nutrien Export</h3>
+                <h2><span></span></h2>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="styles/SDR.png" alt="">
+                </div>
+                <h3>Soil Retention</h3>
+                <h2><span></span></h2>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="about" id="about">
+    <div class="heading">
+        <span>About Us</span>
+        <h1>Pariwisata di Badung</h1>
+    </div>
+    <div class="about-container">
+        <div class="about-img">
+            <div class="video">
+                <iframe 
+                    src="https://www.youtube.com/embed/kgRhcJC3dTM?autoplay=1&mute=1&controls=1&loop=1&playlist=kgRhcJC3dTM" 
+                    title="Video YouTube" 
+                    frameborder="0"
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen
+                    width="100%" height="315">
+                </iframe>
+            </div>
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <p>Sedikit perkenalan dengan perkembangan pariwisata di Badung</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <a href="index.html"><img class="img-footer" src="badung.png" alt="" height="50" width="200"></a>
+            <p>&#169;Skripsi2025</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+    </footer>
+     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
