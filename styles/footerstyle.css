@@ -1,14 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
 footer {
     position: relative;
@@ -16,7 +11,8 @@ footer {
     background: #ffffff;
     color: #fff;
     min-height: 100px;
-    padding: 20px 50px;
+
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,18 +23,5 @@ footer {
 footer p {
     color: #000000;
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
     font-size: 0.9em;
-}
-
-footer p a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.social a{
-    color: #444;
-    padding: 10px;
-    font-size: 21px;
 }
